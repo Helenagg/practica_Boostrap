@@ -19,44 +19,53 @@
             </div>
             <div class="col-6 d-flex">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Create a new post
                 </button>
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Create new post</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModaleLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div> 
+                            <div class="modal-body">
+                                <div>
+                                    <h5>Caption</h5>
+                                    <textarea placeholder="Escribe aquí tu comentario" style="width: 400px;"></textarea> 
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <h5>Caption</h5>
-                            <textarea>Escribe aquí tu comentario</textarea>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Publish</button>
-                        </div>
-                    </div>
                     </div>
                 </div>
+                <!--Modal End-->
+
+                <!--Submenu Star-->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-gear" style="color: white"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="#">Accesibility</a>
-                        <a class="dropdown-item" href="#">Privacy</a>
-                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy</a></li>
+                        <li class="border-top"><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+    <!--Submenu End-->
     <!--Menu End-->
 
     <!--Pagination Start-->
